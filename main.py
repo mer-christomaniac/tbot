@@ -16,7 +16,7 @@ client = TelegramClient('my_session', api_id, api_hash)
 
 groq = Groq()
 
-people = [1365625365,7230622894]
+people = [1365625365,7230622894,5035275727]
 
 DB_PATH = "chat_history.db"
 HISTORY_LIMIT = 20

@@ -145,6 +145,8 @@ def get_response(messages):
 
 @client.on(events.NewMessage(incoming=True))
 async def handler(event):
+    if not event.is_private:
+        return
     if event.sender_id not in people:
         return
     msg = event.message
